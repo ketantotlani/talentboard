@@ -5,25 +5,31 @@ import './Header.css'
 function Header() {
     return (
         <div>
-              <header>
-                <nav>
-                    <div className="container">
-                    <div className="logo">
-                            <h3 > <Link to={'/home'}>  Talent Board</Link></h3>
-                            </div>
-                        <div className="items">
-                            
-                            <div className="links">
-                                <Link to={'/home'}>Home</Link>
-                                <Link to={'/home'}>Job Seekers</Link>
-                                <Link to={'/graphs'}>Graphs</Link>
-                                <Link to={'/about'}>About</Link>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-        
-    </header>
+             <nav className="navbar navbar-expand-md navbar-light">
+            <div className="container ">
+                    <Link to={'/'} className="navbar-brand">Talent Board</Link>
+                <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                
+                <div className="collapse navbar-collapse" id="menu">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <Link to={'/home'} className="nav-link">Home</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to={'/home'} className="nav-link">Job Seekers</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to={'/graphs'} className="nav-link">Graphs</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to={'/about'} className="nav-link">About</Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         </div>
     )
 }

@@ -8,3 +8,12 @@
     padding: 5% 10% 5% 10%;
     justify-content: space-evenly;
 }
+
+@media(max-width:768px){
+    .chartContainer{
+        flex-direction: column;
+        padding: 0;
+        overflow: scroll;
+    }
+    
+}

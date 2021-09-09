@@ -20,10 +20,11 @@ h1{
     table-layout: fixed;
   }
   .tbl-header{
+    overflow-x:auto;
     background-color: rgba(255,255,255,0.3);
    }
   .tbl-content{
-    height:300px;
+    height:340px;
     overflow-x:auto;
     margin-top: 0px;
     border: 1px solid rgba(255,255,255,0.3);
@@ -68,3 +69,10 @@ h1{
   ::-webkit-scrollbar {
       width: 6px;
   } 
+
+  @media(max-width:768px){
+    table{
+      width:100%;
+      table-layout: auto;
+    }
+  }
