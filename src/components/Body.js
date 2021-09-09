@@ -24,8 +24,8 @@ function Body() {
             <section>
 
   <h1 className="heading">Job Seekers</h1>
-  <div class="tbl-header">
-    <table cellpadding="0" cellspacing="0" border="0">
+  <div className="tbl-header">
+    <table cellPadding="0" cellSpacing="0" border="0">
       <thead>
         <tr>
           <th>Full Name</th>
@@ -39,11 +39,11 @@ function Body() {
       </thead>
     </table>
   </div>
-  <div class="tbl-content">
-    <table cellpadding="0" cellspacing="0" border="0">
+  <div className="tbl-content">
+    <table cellPadding="0" cellSpacing="0" border="0">
       <tbody>
-          {data.map(item => (
-              <tr key={item}>
+          {data.map((item, key) => (
+              <tr key={key}>
               <td className="item-name" onClick={()=> window.open(item.linkedinUrl)}>{item.name} <img className="linked" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="" /></td>
               <td>{item.jobRole}</td>
               <td>{item.experience} Years</td>

@@ -21,11 +21,12 @@ function Graphs() {
                 }
                 // setlocation(counts)
                 
-                setLocation()
+                // setLocation()
                 var items= Object.keys(counts).map((key) => [key, counts[key]])
                 var item = [["Location", "Job Seekers"]]
                 var main = item.concat(items)
                setLocation(main)
+
                var expcount = {};
                for (var j = 0; j < empexp.length; j++) {
                 expcount[empexp[j]] = 1 + (expcount[empexp[j]] || 0);
@@ -33,7 +34,7 @@ function Graphs() {
                // setlocation(counts)
                
                var items1= Object.keys(expcount).map((key) => [(key+" Years"), expcount[key]])
-               var item1 = [["Location", "Job Seekers"]]
+               var item1 = [["Experience", "Years"]]
                var main1 = item1.concat(items1)
               setJobexp(main1)
                
@@ -42,9 +43,10 @@ function Graphs() {
             newitems();
             
                 console.log(location);
+                console.log(jobexp);
         }, 1000);
-        
-    })
+        // eslint-disable-next-line
+    }, [])
 
     useEffect(() => {
         const getData = () =>{
@@ -60,8 +62,8 @@ function Graphs() {
             .catch(err => console.log(err))   
         }
         getData(); 
-          
-    })
+          // eslint-disable-next-line
+    }, [])
  
     return (
         <>
