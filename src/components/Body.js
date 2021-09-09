@@ -11,7 +11,7 @@ function Body() {
             axios.post(`https://nwmxjrs4cb.execute-api.ap-south-1.amazonaws.com/prod/talent/profiles`, {   limit: 20, offset: 0 })
             .then(res => {
                 setData(res.data.profiles)
-                console.log(res);
+                // console.log(res);
             })
             .catch(err => console.log(err))
         }

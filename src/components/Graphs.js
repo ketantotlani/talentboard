@@ -42,8 +42,7 @@ function Graphs() {
             
             newitems();
             
-                console.log(location);
-                console.log(jobexp);
+               
         }, 1000);
         // eslint-disable-next-line
     }, [])
