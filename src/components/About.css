@@ -1,0 +1,11 @@
+.aboutsection{
+    padding: 10%;
+}
+
+.aboutsection>h1{
+    margin-bottom: 40px;
+}
+.about{
+    font-size: 20px;
+    text-align: center;
+}

@@ -1,0 +1,10 @@
+.heading1{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-weight: 500;
+}
+.chartContainer{
+    display: flex;
+    padding: 5% 10% 5% 10%;
+    justify-content: space-evenly;
+}
